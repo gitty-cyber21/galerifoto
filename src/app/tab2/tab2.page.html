@@ -1,17 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      About Us
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h1>About Us</h1>
+  <p> Hai nama saya Kevin Benedict. Saya lahir tanggal 21 Maret 2000 di Surabaya. Hobby saya main game jika bisa bangun pagi teratur mungkin hobby saya termasuk lari pagi. 
+    Status sudah ganda campuran.
+  </p>
+  <ion-item>
+    <ion-label>Input number 0-10 -> </ion-label>
+    <ion-input [(ngModel)] = "nomor"></ion-input>
+  </ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-button (click) = "check()">Check</ion-button>
 </ion-content>

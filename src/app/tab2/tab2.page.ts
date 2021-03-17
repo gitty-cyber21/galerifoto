@@ -7,6 +7,16 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  nomor : number;
+  num : number;
+  constructor() {
+    this.num = Math.floor(Math.random() * 11);   
+  }
+
+  check(){
+    if(this.num == this.nomor){
+      alert("Jawaban anda benar");
+    }
+  }
 
 }
