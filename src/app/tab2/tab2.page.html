@@ -16,5 +16,12 @@
     <ion-input [(ngModel)] = "nomor"></ion-input>
   </ion-item>
 
-  <ion-button (click) = "check()">Check</ion-button>
+  <ion-button (click) = "check()">Check</ion-button><br>
+
+  <ng-template *ngIf="tampil; then templatetrue; else templatefalse"></ng-template>
+
+  <ng-template #templatetrue>
+    <ion-img src ="assets\mulan.jpg"></ion-img>
+  </ng-template>
+
 </ion-content>

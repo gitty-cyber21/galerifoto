@@ -9,6 +9,9 @@ export class Tab2Page {
 
   nomor : number;
   num : number;
+
+  tampil : boolean = false;
+
   constructor() {
     this.num = Math.floor(Math.random() * 11);   
   }
@@ -16,6 +19,7 @@ export class Tab2Page {
   check(){
     if(this.num == this.nomor){
       alert("Jawaban anda benar");
+      this.tampil = true;
     }
   }
 
